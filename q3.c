@@ -3,31 +3,27 @@
 
 int main(){
 
-    setlocale(LC_ALL, "Portuguese");
+    float ma=0, acm=0, mat=0;
+    int con=0;
 
-    float MA, ACM=0, MAT=0;
-    int CON=0;
+    while(ma!=-1){
+        printf("Media anual:");
+        scanf("%f", &ma);
 
-    while(MA!=-1){
-        printf("MÉDIA ANUAL DE UM ALUNO: ");
-        scanf("%f", &MA);
-
-    if(MA!=-1){
-        ACM+=MA;
-        CON++;
+    if(ma!=-1){
+        acm+=ma;
+        con++;
 }
 
 }
 
-    if(CON>0){
-        MAT=ACM/CON;
-        printf("MEDIA ANUAL DA TURMA = %.2f", MAT);
+    if(con>0){
+        mat=acm/con;
+        printf("Media anual turma = %.2f", mat);
 }
-    else
-        printf("\nNENHUMA MÉDIA VÁLIDA FORNECIDA\n");
-
-
-
+    else{
+        printf("\n Nenhuma mêdia válida fornecida \n");
+}
     return(0);
 
 }
